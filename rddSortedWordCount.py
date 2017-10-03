@@ -36,7 +36,7 @@ sortedWordCount = wordCountrev.sortByKey()
 for key,val in sortedWordCount.collect():
     cleanWord = val.encode('ascii', 'ignore')
     if cleanWord:
-        print(key,val)
+       print(key,val)
 
 
 
