@@ -1,5 +1,12 @@
 from pyspark import SparkContext,SparkConf
-import collections
+
+"""
+@author: Archana Masilamani
+
+Description:
+Spark script to find the average friends for each age group
+
+"""
 
 conf = SparkConf().setMaster("local").setAppName("FriendsByAge")
 sc = SparkContext(conf=conf)

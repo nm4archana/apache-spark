@@ -1,6 +1,14 @@
 from pyspark import SparkContext,SparkConf
-import collections
 import re
+
+"""
+@author: Archana Masilamani
+
+Description:
+Spark script for Sorted Word Count (RDD - Scalable) - Not using countByValue()
+
+"""
+
 
 conf = SparkConf().setMaster("local").setAppName("WordCount")
 sc = SparkContext(conf=conf)

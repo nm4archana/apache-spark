@@ -1,6 +1,14 @@
 from pyspark import SparkContext,SparkConf
 import collections
 
+"""
+@author: Archana Masilamani
+
+Description:
+Spark script to find the minimum and maximum temperature from the given data
+
+"""
+
 conf = SparkConf().setMaster("local").setAppName("Minimum Temperature")
 sc = SparkContext(conf = conf)
 rdd = sc.textFile("Data/1800.csv")
