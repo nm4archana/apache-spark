@@ -3,7 +3,7 @@ import collections
 
 conf = SparkConf().setMaster("local").setAppName("Minimum Temperature")
 sc = SparkContext(conf = conf)
-rdd = sc.textFile("/Users/archana/Documents/Projects/Spark/1800.csv")
+rdd = sc.textFile("Data/1800.csv")
 
 '''
 parsedLines = rdd.map(lambda x: x.split(','))
