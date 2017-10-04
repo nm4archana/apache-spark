@@ -4,7 +4,7 @@ from pyspark import SparkConf,SparkContext
 @author: Archana Masilamani
 
 Description:
-Spark script to add up the total amount spent for each unique customer ID, sorted based on amount spent
+Spark script to find the popular movie based on the count of occurance of each movie
 
 """
 
